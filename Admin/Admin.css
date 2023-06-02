@@ -1,0 +1,36 @@
+nav p {
+    font-size: 30px;
+    font: bold;
+}
+
+/* nav p:hover{
+    color: red;
+} */
+.navbar {
+    position: fixed;
+    top: 0px;
+}
+
+main {
+    margin-top: 100px;
+}
+main a{
+    text-decoration: none;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    right: 10px;
+    top: 67px;
+    background-color: beige;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}

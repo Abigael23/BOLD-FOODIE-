@@ -1,0 +1,12 @@
+main{
+    background-image: url(../pics/food\ bg.png);
+            /* background-color: rgba(255, 0, 0, 0.505); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 647px;
+            width: 1000px;
+}
+main a{
+    text-decoration: none;
+}
