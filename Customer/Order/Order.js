@@ -195,7 +195,8 @@ function display() {
         });
     }
     
-    function cart() {
+    function cart(id) {
+        localStorage.setItem("onedish", id);
         window.location.href = "../../Customer/Cart/Cart.html"
     }
     
