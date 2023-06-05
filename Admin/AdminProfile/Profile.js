@@ -26,3 +26,9 @@ function saved(ev){
         alert("Personal Information saved") 
     // }
     }
+
+    function logout() {
+        localStorage.removeItem("CU")
+    window.location.href = "../AdminLogin/AdminLogin.html"
+    }
+    
