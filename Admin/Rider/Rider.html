@@ -32,45 +32,53 @@
         </a>
         <ul class="nav align-items-center">
             <li class="nav-item">
-                <a href=""
+                <a href="../AdminProfile/Profile.html"
                     class="nav-link fs-3 fw-bold">
                     <p>
-                        Schedule
+                        My Profile
                     </p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link fs-3 fw-bold">
+                <a href="../Order/Order.html"
+                    class="nav-link fs-3 fw-bold">
                     <p>
-                      List
+                        Customer's Order
                     </p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link fs-3 fw-bold">
+                <a href="../Vendor/Vendor.html" class="nav-link fs-3 fw-bold">
+                    <p>
+                        Vendors
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../Rider/Rider.html" class="nav-link fs-3 fw-bold">
                     <p>
                         <i class="bi bi-bicycle"></i>
                         Riders
                     </p>
                 </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a href="#" class="nav-link fs-3 fw-bold">
                     <p>
                         Company
                     </p>
                 </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link fs-3 fw-bold">
-                    <button onclick="logout()" class="btn btn-primary text-white" id="signOut">Log Out</button>
-                </a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item">
                 <a href="#" class="nav-link fs-3 fw-bold">
                     <p>History</p>
                 </a>
             </li> -->
+            <li class="nav-item">
+                <a href="#" class="nav-link fs-3 fw-bold">
+                    <button onclick="logout()" class="btn btn-primary text-white" id="signOut">Log Out</button>
+                </a>
+            </li>
         </ul>
     </nav>
     <main>
@@ -86,15 +94,15 @@
         </div>
         <div class="text-primary">
             <label for="">Food</label> <br>
-            <input class="text-secondary border rounded w-100 py-2" type="text" name="" id="food">
+            <input class="text-secondary border rounded w-100 py-1" type="text" name="" id="food">
         </div>
         <div class="text-primary">
             <label for="">Category</label>
-            <input class="text-secondary border rounded w-100 py-2" type="text" name="" id="category">
+            <input class="text-secondary border rounded w-100 py-1" type="text" name="" id="category">
         </div>
         <div class="text-primary">
             <label for="">Food Class</label>
-            <input class="text-secondary border rounded w-100 py-2" type="text" name="" id="foodclass">
+            <input class="text-secondary border rounded w-100 py-1" type="text" name="" id="foodclass">
         </div>
         <div class="text-primary">
             <label for="">Description</label>
@@ -105,16 +113,13 @@
             <input class="text-secondary border rounded w-100 py-2" type="text" name="" id="price">
         </div>
         <div class="text-center my-4">
-            <button class="btn btn-primary w-50" onclick="upload(event)">Upload</button>
+            <button class="btn btn-primary w-50" onclick="upload()">Upload</button>
         </div>
     </div>
-    <div class="text-center">
-        <textarea name="" id="showpost" cols="65" rows="20" class="text-primary"></textarea>
-    </div>
-    
+    <textarea name="" id="showpost" cols="30" rows="10"></textarea>
 </main>
 </body>
 
 </html>
 
-<script src="./Vendor.js"></script>
+<script src="./Rider.js"></script>

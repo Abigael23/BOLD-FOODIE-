@@ -32,17 +32,25 @@
         </a>
         <ul class="nav align-items-center">
             <li class="nav-item">
-                <a href=""
+                <a href="../AdminProfile/Profile.html"
                     class="nav-link fs-3 fw-bold">
                     <p>
-                        Schedule
+                        My Profile
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../Order/Order.html"
+                    class="nav-link fs-3 fw-bold">
+                    <p>
+                        Customer's Order
                     </p>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link fs-3 fw-bold">
                     <p>
-                      List
+                        Vendors
                     </p>
                 </a>
             </li>
@@ -54,67 +62,32 @@
                     </p>
                 </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a href="#" class="nav-link fs-3 fw-bold">
                     <p>
                         Company
                     </p>
                 </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link fs-3 fw-bold">
-                    <button onclick="logout()" class="btn btn-primary text-white" id="signOut">Log Out</button>
-                </a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item">
                 <a href="#" class="nav-link fs-3 fw-bold">
                     <p>History</p>
                 </a>
             </li> -->
+            <li class="nav-item">
+                <a href="#" class="nav-link fs-3 fw-bold">
+                    <button class="btn btn-primary text-white" id="signOut">Log Out</button>
+                </a>
+            </li>
         </ul>
     </nav>
-    <main>
-        <h1 class="text-primary text-center">Take Orders</h1>
-        <p class="text-primary text-center">Grow your Food Business <br> Bring happiness to customers</p>
-        
-    <div class="w-50 border p-4 rounded shadow mx-auto my-4">
-        <h1 class="text-primary text-center">Post dishes as a Vendor</h1>
-    <div class="text-primary">
-        <label for="">Image</label>
-        <input onchange="choosefile()" type="file" name="" id="file"></p>
-    <img id="myimg" src="" alt="">
-        </div>
-        <div class="text-primary">
-            <label for="">Food</label> <br>
-            <input class="text-secondary border rounded w-100 py-2" type="text" name="" id="food">
-        </div>
-        <div class="text-primary">
-            <label for="">Category</label>
-            <input class="text-secondary border rounded w-100 py-2" type="text" name="" id="category">
-        </div>
-        <div class="text-primary">
-            <label for="">Food Class</label>
-            <input class="text-secondary border rounded w-100 py-2" type="text" name="" id="foodclass">
-        </div>
-        <div class="text-primary">
-            <label for="">Description</label>
-            <input class="text-secondary border rounded w-100 py-2" type="text" name="" id="description">
-        </div>
-        <div class="text-primary">
-            <label for="">Price</label>
-            <input class="text-secondary border rounded w-100 py-2" type="text" name="" id="price">
-        </div>
-        <div class="text-center my-4">
-            <button class="btn btn-primary w-50" onclick="upload(event)">Upload</button>
-        </div>
-    </div>
-    <div class="text-center">
-        <textarea name="" id="showpost" cols="65" rows="20" class="text-primary"></textarea>
-    </div>
-    
+    <main class="text-center">
+        <h1>Take Orders</h1>
+        <p>Grow your Food Business <br> Bring happiness to customers</p>
+        <p id="show"></p>
 </main>
 </body>
 
 </html>
 
-<script src="./Vendor.js"></script>
+<script src="./Order.js"></script>
