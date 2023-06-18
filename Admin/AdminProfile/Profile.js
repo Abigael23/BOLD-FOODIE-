@@ -5,10 +5,10 @@ let phonenumber = document.getElementById("phonenumber")
 let dateofbirth = document.getElementById("dateofbirth")
 let gender = document.getElementById("gender")
 
-let registeredUsers = JSON.parse(localStorage.getItem("users")) || [];
+let savedinfo = JSON.parse(localStorage.getItem("userinfo")) || [];
 function saved(ev){
     ev.preventDefault();
-        let user ={
+        let userinfo ={
             surname: surname.value,
             firstname: firstname.value,
             email: email.value,
@@ -20,9 +20,9 @@ function saved(ev){
         // if (surname.value == "" || firstname.value == "" || email.value == "" || phonenumber.value == "" || gender.value == "") {
         //     alert("Input field cannot be empty")
         // } else {
-        registeredUsers.push(user);
-        localStorage.setItem("users", JSON.stringify(registeredUsers))
-        console.log(user);
+        savedinfo.push(userinfo);
+        localStorage.setItem("userinfo", JSON.stringify(savedinfo))
+        console.log(userinfo);
         alert("Personal Information saved") 
     // }
     }
